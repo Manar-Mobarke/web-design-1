@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<!-- Style of page -->
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+    }
+    header{
+        background-image: url(./img/background-photo.jpg);
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-size: 100% 100%; */
+        /* background-attachment: fixed; */
+        /* width: 100%; */
+        height: 700px;
+        text-align: center;
+        
+    }
+    h1{
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 400;
+        padding-top: 15%;
+        padding-bottom: 4%;
+        color: #F2E7D5;
+        /* margin-top: 20px; */
+    }
+    div{
+        text-align: center;
+        padding: 10px 20px;
+    
+    }
+    .bold{
+        background-color: #393E46;
+        color: #F7F7F7;
+    }
+    .white{
+        background-color: #6D9886;
+        color: #F2E7D5;
+    }
+    header > p{
+        color: #F2E7D5;
+    }
+    input[type=button]{
+        border: #f7f7f765 solid;
+        border-radius: 2px;
+        color: #F2E7D5;
+        background-color: #f2e7d500;
+        padding: .5em .8em;
+        margin-top: 10%;
+        transition: all;
+    }
+    input[type=button]:hover{
+        border: #f7f7f7d4 solid;
+        box-shadow: #f7f7f795 1px 1px 4px;
+        border-radius: 5px;
+        padding: .6em 1em;
+    }
+    input[type=button]:active{
+        border: #f7f7f7d4 solid;
+        color: #393E46;
+        background-color: #f2e7d598;
+
+    }
+    #parent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .out{
+        width: 33.33%;
+    }
+</style>
+<body>
+    <!-- 1st section for header -->
+    <header>
+        <h1>Welcome In Our New City</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <input type="button" value="Read More">
+    </header>
+    <div class="bold">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quam beatae obcaecati saepe ratione reprehenderit quae, eius asperiores dolorum perferendis libero, aliquam voluptate architecto numquam nisi harum, praesentium doloribus? Itaque?</p>
+    </div>
+    <div class="white">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, exercitationem. Dolore, ipsum quis quam alias repellendus magnam? Ducimus debitis quos, ex sequi nisi consequuntur, similique quisquam, itaque placeat unde obcaecati?</p>
+    </div>
+    <div id="parent">
+        <div class="bold out">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, exercitationem. Dolore, ipsum quis quam alias repellendus magnam?</p>
+        </div>
+        <div class="white out">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, exercitationem. Dolore, ipsum quis quam alias repellendus magnam?</p>
+        </div>
+        <div class="bold out">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, exercitationem. Dolore, ipsum quis quam alias repellendus magnam?</p>
+        </div>
+    
+    </div>
+</body>
+</html>
